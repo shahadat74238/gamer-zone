@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: "Lato", sans-serif;
   font-family: "Open Sans", sans-serif;
   font-family: "Work Sans", sans-serif;
@@ -105,7 +106,7 @@ nav {
 }
 
 .banner-main-title {
-  font-size: 95px;
+  font-size: 5rem;
   font-weight: 800;
   text-transform: uppercase;
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
@@ -194,12 +195,15 @@ nav {
 /* gamer section related style ended */
 
 /* funny video section related style started */
+.funny-video-container {
+  padding: 0 10%;
+}
+
 .funny-video-title {
   text-align: center;
   font-size: 48px;
   font-weight: 700;
-  padding: 20px 0px;
-
+  padding-top: 20px;
 }
 
 .title-hi-light {
@@ -216,24 +220,16 @@ nav {
   font-weight: 400;
   line-height: 30px;
   width: 100%;
-  padding-bottom:10px;
+  padding-bottom: 50px;
 }
 
 .funny-video-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 0 10%;
   gap: 20px;
-
-}
-
-.funny-video {
-
-  height: 300px;
 }
 
 .funny-video-photo {
-  height: 100%;
   width: 100%;
 }
 
@@ -255,8 +251,6 @@ nav {
   gap: 10%;
   padding: 0px 10%;
   margin: 100px 0px;
-  border: 5px solid black;
-  height: 500px;
   text-align: right;
 }
 
@@ -276,15 +270,49 @@ nav {
   line-height: 25px;
 }
 
+.play-img-section {
+  position: relative;
+}
+
 .main-photo {
-  width: 200px;
+  position: relative;
+  width: 500px;
 }
 
 .sub-photo {
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
   width: 200px;
 }
 
 /* play section related style ended */
+
+/* play games section related style */
+.play-games {
+  flex-direction: row-reverse;
+}
+.play-games-title {
+  text-align: left;
+}
+.play-games-des {
+  text-align: left;
+}
+.play-games-img {
+  position: relative;
+}
+.games-main-photo{
+  position: relative;
+  width: 500px;
+}
+.games-sub-photo {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 200px;
+}
+
+/* play games section telated style ended */
 
 /* careers section related style started */
 .careere-section-container {
@@ -346,26 +374,32 @@ nav {
   text-align: center;
   background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
   padding: 100px 10%;
-}
-.game-opction-section{
   display: flex;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
 }
+
 .game-opction-btn {
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: fff;
+  background-color: #FFF;
   border-radius: 50px;
   padding: 10px 15px;
   outline: none;
   border: none;
   cursor: pointer;
   margin: 10px;
-  background-color: #FFF;
+}
+
+.game-opction-btn:hover {
+  border: #f948b2 2px solid;
+}
+
+.game-opction-btn:hover .btn-title {
+  color: #f948b2;
 }
 
 .btn-img {
@@ -375,7 +409,7 @@ nav {
 .btn-title {
   color: #0B0223;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 /* games opction section related style ended */
@@ -415,13 +449,28 @@ footer {
   font-weight: 600;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+  list-style: none;
+}
+
+.icon {
+  color: #FFF;
+  font-size: 2rem;
+}
+
 .footer-last-menu {
   display: flex;
   align-items: center;
   justify-content: center;
   list-style: none;
   gap: 50px;
-  margin-top: 50px;
+  margin-top: 30px;
+  list-style: none;
 }
 
 .last-menu a {
@@ -437,66 +486,145 @@ footer {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
+/* footer related style ened */
 
-@media only screen and (min-width: 200px) and (max-width: 767px){
+/* Mobile responsive */
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+
   /* nav seciton */
-  nav{
+  nav {
     flex-direction: column;
   }
-  .nav-menu-list{
+
+  .nav-menu-list {
     flex-direction: column;
     margin-top: 20px;
   }
+
   /* header banner seciton */
-  .header-banner-container{
+  .header-banner-container {
     flex-direction: column;
   }
-  .header-banner-imgaria{
+
+  .header-banner-imgaria {
     width: 100%;
   }
-  .header-banner-photo{
+
+  .header-banner-photo {
     width: 100%;
   }
+
   /* gamer-section */
-  .gamer-conatiner{
-    flex-direction: column;
+  .gamer-conatiner {
+    flex-direction: column row-reverse;
   }
-  .gamer-img-container{
+
+  .gamer-img-container {
     width: 100%;
   }
-  .gamer-photo{
+
+  .gamer-photo {
     width: 100%;
   }
+
   /* funny video seciton */
-  .funny-video-section{
+  .funny-video-section {
     grid-template-columns: repeat(1, 1fr);
   }
-  .funny-video-title{
+
+  .funny-video-title {
     font-size: 45px;
     padding: 10px;
   }
-  .funny-video-main-des{
+
+  .funny-video-main-des {
     font-size: 18px;
     width: 90%;
     margin: auto;
     text-align: center;
   }
-  .funny-video{
+
+  .funny-video {
     margin-bottom: 50px;
     height: 400px;
   }
 
+  /* play seciton */
+  .play-text-section {
+    padding-bottom: 50px;
+  }
 
-  /* careere seciton */
-  .careere-section-container{
+  .play-section-container {
     flex-direction: column;
   }
-  .careers-text-section{
+
+  .main-photo {
+    width: 300px;
+  }
+
+  .sub-photo {
+    width: 150px;
+  }
+  /* play games section */
+  .games-main-photo{
+    width: 300px;
+  }
+  .games-sub-photo{
+    width: 150px;
+  }
+  /* careere seciton */
+  .careere-section-container {
+    flex-direction: column;
+  }
+
+  .careers-text-section {
     padding-right: 10%;
   }
 
+  .careers-photo {
+    width: 380px;
+  }
 
+  /* games opction section */
+  .games-opction-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn-title {
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  /* footer section */
+  .footer-menus-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-menu{
+    height: 10px;
+  }
+  .footer-menu a {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .footer-last-menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 20px;
+  }
+  .last-menu{
+    height: 10px;
+  }
+  .last-menu a{
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .footer-finishing-title{
+    font-size: 16px;
+    font-weight: normal;
+  }
 }
