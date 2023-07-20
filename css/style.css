@@ -10,6 +10,7 @@
 .hi-light {
   color: #ff42a5;
 }
+
 .btn-primary {
   color: #fff;
   font-size: 20px;
@@ -20,6 +21,7 @@
   padding: 15px 30px;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 /* Header related style */
@@ -33,14 +35,17 @@ nav {
   padding: 20px 10%;
   background-color: #fff;
 }
+
 .nav-logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .nav-icon {
   height: 40px;
 }
+
 .nav-icon-name {
   color: #0b0223;
   font-family: Work Sans;
@@ -49,6 +54,7 @@ nav {
   font-weight: 700;
   line-height: normal;
 }
+
 .nav-menu-list {
   display: flex;
   align-items: center;
@@ -56,12 +62,14 @@ nav {
   list-style: none;
   text-align: center;
 }
+
 .nav-menu-item a {
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
   color: #3c354f;
 }
+
 .nav-menu-btn {
   color: #3c354f;
   font-size: 1.2rem;
@@ -72,11 +80,13 @@ nav {
   outline: none;
   border: none;
 }
+
 #nav-btn-icon {
   font-size: 1.5rem;
   padding: 0 5px;
   color: red;
 }
+
 /* nav related style ended */
 
 /* Header banner related style */
@@ -84,7 +94,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 10%;
+  padding: 0px 10%;
   background-image: url("../images/Group\ 14.png");
   background-repeat: no-repeat;
   background-size: 50%;
@@ -93,6 +103,7 @@ nav {
 .banner-title {
   font-size: 3rem;
 }
+
 .banner-main-title {
   font-size: 95px;
   font-weight: 800;
@@ -102,6 +113,7 @@ nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .banner-opction {
   color: #534c64;
   font-size: 20px;
@@ -109,15 +121,20 @@ nav {
   text-transform: lowercase;
   margin-top: 10px;
 }
+
 .btn-1 {
   margin: 40px 20px 0 0;
 }
+
 .btn-2 {
   background: #4ec5f7;
 }
+
 .header-banner-photo {
   width: 500px;
+  margin-bottom: -5px;
 }
+
 /* header banner related style ended */
 /* header rleated style ended */
 
@@ -127,12 +144,15 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 10%;
+  padding: 50px 10%;
   text-align: right;
+  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
+
 .gamer-photo {
   width: 600px;
 }
+
 .gamer-title {
   font-size: 48px;
   font-weight: 700;
@@ -142,6 +162,7 @@ nav {
   -webkit-text-fill-color: transparent;
   padding-bottom: 20px;
 }
+
 .gamer-des {
   color: #534c64;
   font-size: 18px;
@@ -149,15 +170,18 @@ nav {
   line-height: 30px;
   width: 100%;
 }
+
 .purpose-title {
   color: #534c64;
   font-size: 22px;
   font-weight: 500;
   line-height: 45px;
 }
+
 .gamer-btn {
   margin: 20px 0;
 }
+
 .purpose-des {
   color: #534c64;
   font-family: Work Sans;
@@ -166,4 +190,313 @@ nav {
   font-weight: 700;
   line-height: 45px;
 }
+
 /* gamer section related style ended */
+
+/* funny video section related style started */
+.funny-video-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  padding: 20px 0px;
+
+}
+
+.title-hi-light {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.funny-video-main-des {
+  text-align: center;
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 100%;
+  padding-bottom:10px;
+}
+
+.funny-video-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 10%;
+  gap: 20px;
+
+}
+
+.funny-video {
+
+  height: 300px;
+}
+
+.funny-video-photo {
+  height: 100%;
+  width: 100%;
+}
+
+.funny-video-des {
+  padding: 15px 0px;
+  font-size: 16px;
+  color: #534c64;
+  font-weight: bold;
+  word-spacing: 0.5px;
+}
+
+/* funny video section related style ended */
+
+/* play section related style started */
+.play-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+  padding: 0px 10%;
+  margin: 100px 0px;
+  border: 5px solid black;
+  height: 500px;
+  text-align: right;
+}
+
+.play-section-title {
+  text-align: right;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+.play-section-des {
+  color: #534C64;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.main-photo {
+  width: 200px;
+}
+
+.sub-photo {
+  width: 200px;
+}
+
+/* play section related style ended */
+
+/* careers section related style started */
+.careere-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  gap: 10px;
+  background-color: #f948b2;
+  color: white;
+}
+
+.careers-title {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  margin: 20px 0;
+}
+
+.careers-des {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.careers-service-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.career-service li {
+  list-style: none;
+  padding-bottom: 10px5
+}
+
+.careers-country li {
+  list-style: none;
+  padding-bottom: 5px;
+  text-align: right;
+}
+
+.careers-btn {
+  color: #f948b2;
+  background: #FFF;
+  margin: 20px 0;
+}
+
+.careers-photo {
+  width: 600px;
+}
+
+/*  careers related section ended */
+
+/* games opction section related style started */
+.games-opction-container {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+  padding: 100px 10%;
+}
+.game-opction-section{
+  display: flex;
+  flex-wrap: wrap ;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.game-opction-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: fff;
+  border-radius: 50px;
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  background-color: #FFF;
+}
+
+.btn-img {
+  height: 30px;
+}
+
+.btn-title {
+  color: #0B0223;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* games opction section related style ended */
+/* main section ended */
+
+/* footer related style started */
+footer {
+  padding: 50px 10%;
+  background: #0B0223;
+}
+
+.footer-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-title {
+  color: #FFF;
+}
+
+.footer-menus-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-last-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.last-menu a {
+  color: rgba(255, 255, 255, 0.60);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-finishing-title {
+  color: rgba(255, 255, 255, 0.60);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 767px){
+  /* nav seciton */
+  nav{
+    flex-direction: column;
+  }
+  .nav-menu-list{
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  /* header banner seciton */
+  .header-banner-container{
+    flex-direction: column;
+  }
+  .header-banner-imgaria{
+    width: 100%;
+  }
+  .header-banner-photo{
+    width: 100%;
+  }
+  /* gamer-section */
+  .gamer-conatiner{
+    flex-direction: column;
+  }
+  .gamer-img-container{
+    width: 100%;
+  }
+  .gamer-photo{
+    width: 100%;
+  }
+  /* funny video seciton */
+  .funny-video-section{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .funny-video-title{
+    font-size: 45px;
+    padding: 10px;
+  }
+  .funny-video-main-des{
+    font-size: 18px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .funny-video{
+    margin-bottom: 50px;
+    height: 400px;
+  }
+
+
+  /* careere seciton */
+  .careere-section-container{
+    flex-direction: column;
+  }
+  .careers-text-section{
+    padding-right: 10%;
+  }
+
+
+}
